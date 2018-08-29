@@ -42,14 +42,16 @@ def setup():
 def turn_on_LED():
 	GPIO.output(ledPin, GPIO.HIGH)
 	global ledIsOn
-	ledIsOn = True
-	print("LED ON")
+	if not ledIsOn:
+		ledIsOn = True
+		print("LED ON")
 
 def turn_off_LED():
 	GPIO.output(ledPin, GPIO.LOW)
 	global ledIsOn
-	ledIsOn = False
-	print("LED OFF")
+	if ledIsOn:
+		ledIsOn = False
+		print("LED OFF")
 
 def blink_LED(speed):
 	print("!!! BLINK BLINK !!!")
