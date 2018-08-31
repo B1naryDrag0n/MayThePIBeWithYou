@@ -19,25 +19,28 @@ ultraSpeed = 0.05
 
 ledIsOn = False
 
+def show_ui():
+	print("      *** SETUP COMPLETE ***")
+	print("       ********************\n")
+	print("=#=#=#=#  KEY  BINDINGS  #=#=#=#=#=")
+	print("|                                 |")
+	print("| Press o : Turn LED on           |")
+	print("|       i : Turn LED off          |")
+	print("|                                 |")
+	print("|       1 : Low Speed Blink       |")
+	print("|       2 : Medium Speed Blink    |")
+	print("|       3 : High Speed Blink      |")
+	print("|       4 : Ultra Speed Blink     |")
+	print("|                                 |")
+	print("|       e : Exit App              |")
+	print("|                                 |")
+	print("=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=\n")
+
 def setup():
 	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(ledPin, GPIO.OUT)
 	GPIO.output(ledPin, GPIO.LOW)
-	print("     *** SETUP COMPLETE ***")
-	print("      ********************\n")
-	print("=#=#=#=# KEY BINDINGS #=#=#=#=#=")
-	print("|                              |")
-	print("| Press o : Turn LED on        |")
-	print("|       i : Turn LED off       |")
-	print("|                              |")
-	print("|       1 : Low Speed Blink    |")
-	print("|       2 : Medium Speed Blink |")
-	print("|       3 : High Speed Blink   |")
-	print("|       4 : Ultra Speed Blink  |")
-	print("|                              |")
-	print("|       e : Exit App           |")
-	print("|                              |")
-	print("=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#\n")
+	show_ui()
 
 def turn_on_LED():
 	GPIO.output(ledPin, GPIO.HIGH)
