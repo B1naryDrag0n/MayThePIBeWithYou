@@ -19,7 +19,7 @@ Hype is real! c:
 
 ## Projects
 
-![Fun Kit!](/Images/fun_kit.jpg)
+![Fun Kit!](/Images/001_funKit.jpg)
 
 I am basically following the projects in this Freenove kit. From the very first
 and all the way to the last! By doing so, I hope to put my Raspberry PI to better
@@ -37,7 +37,11 @@ First project is a blinking LED. So had to at least allow the user to turn the L
 on and off, and it has four blinking controls, to make the LED flash at four
 different speeds.
 
-![LED Madness!!! c:](/Images/led_on.jpg)
+![LED Madness!!! c:](/Images/002_ledOn.jpg)
+
+Added a very basic console UI so the user knows how to control the LED.
+
+![Console Interface](/Images/003_consoleUI.jpg)
 
 ---
 
