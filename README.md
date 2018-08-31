@@ -45,4 +45,19 @@ Added a very basic console UI so the user knows how to control the LED.
 
 ---
 
+### LEDSwitch
+
+![LED Switch](/Images/004_ledSwitch.jpg)
+
+Second project has again the LED as the main cast! But this time it has a *happy
+little friend*, a switch! :3 The whole thing here is detecting when the black switch
+is pressed, and when it is, turn on the LED.
+
+![Let there be light! ^.^](/Images/005_letThereBeLight.jpg)
+
+I didn't do a whole lot of customization on this project, only preventing the spam
+in the console from the original version.
+
+---
+
 # To Be Continued...
