@@ -30,6 +30,7 @@ def loop():
 def destroy():
 	GPIO.output(ledPin, GPIO.LOW)
 	GPIO.cleanup()
+	print("Program ended")
 
 if __name__ == "__main__":
 	setup()
